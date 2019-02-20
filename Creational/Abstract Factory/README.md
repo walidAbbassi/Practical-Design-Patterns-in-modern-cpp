@@ -16,7 +16,7 @@ So at runtime, abstract factory is coupled with any desired concrete factory whi
 #### Product : Defines a product object to be created by the corresponding concrete factory and implements the AbstractProduct interface.
 #### Client : Uses only interfaces declared by AbstractFactory and AbstractProduct classes.
 <p align="center">
-<img
+<img width="460" height="300" 
 src="https://github.com/walidAbbassi/Example-Design-Patterns/blob/master/Creational/Abstract%20Factory/AbstractFactory.PNG">
 </p>
 

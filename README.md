@@ -3,7 +3,7 @@
 is an acronym for the first five object-oriented design(OOD)** principles** by Robert C. Martin
 These principles, when combined together, make it easy for a programmer to develop software that are easy to maintain and extend. They also make it easy for developers to avoid code smells, easily refactor code, and are also a part of the agile or adaptive software development.
 
-#### - Single responsibility principle
+- Single responsibility principle
 #### - Open–closed principle
 #### - Liskov substitution principle
 #### - Interface segregation principle

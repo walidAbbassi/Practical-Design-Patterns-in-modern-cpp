@@ -11,10 +11,11 @@ So at runtime, abstract factory is coupled with any desired concrete factory whi
 
 ### UML class diagram example for the Abstract Factory Design Pattern.
 
-#### AbstractFactory : Declares an interface for operations that create abstract product objects.
-#### ConcreteFactory : Implements the operations declared in the AbstractFactory to create concrete product objects.
-#### Product : Defines a product object to be created by the corresponding concrete factory and implements the AbstractProduct interface.
-#### Client : Uses only interfaces declared by AbstractFactory and AbstractProduct classes.
+ - AbstractFactory : Declares an interface for operations that create abstract product objects.
+ - ConcreteFactory : Implements the operations declared in the AbstractFactory to create concrete product objects.
+ - Product : Defines a product object to be created by the corresponding concrete factory and implements the AbstractProduct interface.
+ - Client : Uses only interfaces declared by AbstractFactory and AbstractProduct classes.
+ 
 <p align="center">
 <img 
 src="https://github.com/walidAbbassi/Example-Design-Patterns/blob/master/Creational/Abstract%20Factory/AbstractFactory.PNG">

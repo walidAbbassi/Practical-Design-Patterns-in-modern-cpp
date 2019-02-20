@@ -116,7 +116,7 @@ public:
 };
 
 /*
-* Concrete Factory French and Italian
+* Concrete Factory French
 * each concrete factory create a family of products and client uses
 * one of these factories so it never has to instantiate a product object
 */
@@ -131,6 +131,11 @@ public:
 	// ...
 };
 
+/*
+* Concrete Factory Italian
+* each concrete factory create a family of products and client uses
+* one of these factories so it never has to instantiate a product object
+*/
 class ConcreteFactoryItalian : public AbstractFactory {
 public:
 	std::unique_ptr<Car> createCar() {
@@ -142,6 +147,9 @@ public:
 	// ...
 };
 
+/*
+* example use of AbstractFactory
+*/
 void application(AbstractFactory& factory) {
 	std::unique_ptr<Car> car_ptr = factory.createCar();
 	std::unique_ptr<Truck> truck_ptr = factory.createTruck();

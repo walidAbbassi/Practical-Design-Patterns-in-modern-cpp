@@ -62,6 +62,7 @@ In my repository you can find implementation of desgin patterns also in language
 ### References
 Design patterns in this repository are based on
 
+* [SOLID]
 * [Design Patterns by The "Gang of Four"]
 * [Head First: Design Patterns]
 * [Wikipedia]
@@ -70,6 +71,7 @@ Design patterns in this repository are based on
 [Design Patterns in Java]: https://github.com/JakubVojvoda/design-patterns-java
 [Design Patterns in Python]: https://github.com/JakubVojvoda/design-patterns-python
 
+[SOLID]: https://en.wikipedia.org/wiki/SOLID
 [Design Patterns by The "Gang of Four"]: https://en.wikipedia.org/wiki/Design_Patterns
 [Head First: Design Patterns]: http://www.headfirstlabs.com/books/hfdp/ 
 [Wikipedia]: https://en.wikipedia.org/wiki/Software_design_pattern

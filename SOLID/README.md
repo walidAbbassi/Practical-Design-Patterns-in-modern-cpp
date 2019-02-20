@@ -1,6 +1,6 @@
 In object-oriented computer programming, SOLID is a mnemonic acronym for five design principles intended to make software designs more understandable, flexible and maintainable.
 
-SOLID design principles:
+## SOLID design principles:
 
 #### Single responsibility principle (SRP):
 a class should have only a single responsibility (i.e. only changes to one part of the software's specification should be able to affect the specification of the class).		

@@ -17,7 +17,7 @@ type of product.
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Example-Design-Patterns/blob/master/Creational/Abstract%20Factory/Builder.PNG">
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Creational/Factory%20Method/FactoryMethod.PNG">
 </p>
 
 ### When to use

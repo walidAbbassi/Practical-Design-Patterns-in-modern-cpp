@@ -7,7 +7,7 @@ at compile time. In contrast to Abstract Factory, Factory Method contain method 
 type of product.  
 
 
-### UML class diagram example for the Abstract Factory Design Pattern.
+### UML class diagram example for the Factory Method Design Pattern.
 
  - Product – Declares an interface for operations that create abstract product objects.
  - ConcreteProduct – Implements the operations declared in the Factory Method to create concrete product objects.
@@ -17,7 +17,7 @@ type of product.
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Example-Design-Patterns/blob/master/Creational/Abstract%20Factory/Builder.PNG">
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Creational/Factory%20Method/FactoryMethod.PNG">
 </p>
 
 ### When to use

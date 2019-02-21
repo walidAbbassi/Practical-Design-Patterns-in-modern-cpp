@@ -35,12 +35,12 @@ public:
 	}
 
 	// ... constructor (you can make what you need)
-	Car() = default;							// default constructor
+	Car() = default;					// default constructor
 	Car(const Car& car) = delete;				// copy constructor
-	Car operator=(const Car& car) = delete;		// copy assignment operator
+	Car operator=(const Car& car) = delete;			// copy assignment operator
 	Car(const Car&& car) = delete;				// move constructor
-	Car operator=(const Car&& car) = delete;	// move assignment operator
-	~Car() {}									// destructor
+	Car operator=(const Car&& car) = delete;		// move assignment operator
+	~Car() {}						// destructor
 
 private:
 	std::string partSeat;
@@ -61,10 +61,10 @@ public:
 	virtual void buildPartWheel(const std::unique_ptr<Car> &car) = 0;
 
 	// ... constructor (you can make what you need)
-	Builder() = default;							// default constructor
+	Builder() = default;					// default constructor
 	Builder(const Builder& builder) = delete;		// copy constructor
 	Builder(const Builder&& builder) = delete;		// move constructor
-	virtual ~Builder() {}							// destructor
+	virtual ~Builder() {}					// destructor
 };
 
 /*
@@ -84,12 +84,12 @@ public:
 	}
 
 	// ... constructor (you can make what you need)
-	ConcreteBuilderLuxury() = default;																	// default constructor
-	ConcreteBuilderLuxury(const ConcreteBuilderLuxury& concreteBuilderLuxury) = delete;					// copy constructor
-	ConcreteBuilderLuxury operator=(const ConcreteBuilderLuxury& concreteBuilderLuxury) = delete;		// copy assignment operator
-	ConcreteBuilderLuxury(const ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;				// move constructor
-	ConcreteBuilderLuxury operator=(const ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;		// move assignment operator
-	~ConcreteBuilderLuxury() {}
+	ConcreteBuilderLuxury() = default;								// default constructor
+	ConcreteBuilderLuxury(const ConcreteBuilderLuxury& concreteBuilderLuxury) = delete;		// copy constructor
+	ConcreteBuilderLuxury operator=(const ConcreteBuilderLuxury& concreteBuilderLuxury) = delete;	// copy assignment operator
+	ConcreteBuilderLuxury(const ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;		// move constructor
+	ConcreteBuilderLuxury operator=(const ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;	// move assignment operator
+	~ConcreteBuilderLuxury() {}									// destructor
 };
 
 /*
@@ -109,12 +109,12 @@ public:
 	}
 
 	// ... constructor (you can make what you need)
-	ConcreteBuilderBasic() = default;																	// default constructor
-	ConcreteBuilderBasic(const ConcreteBuilderBasic& concreteBuilderBasic) = delete;					// copy constructor
-	ConcreteBuilderBasic operator=(const ConcreteBuilderBasic& concreteBuilderBasic) = delete;			// copy assignment operator
-	ConcreteBuilderBasic(const ConcreteBuilderBasic&& concreteBuilderBasic) = delete;					// move constructor
-	ConcreteBuilderBasic operator=(const ConcreteBuilderBasic&& concreteBuilderBasic) = delete;			// move assignment operator
-	~ConcreteBuilderBasic() {}
+	ConcreteBuilderBasic() = default;								// default constructor
+	ConcreteBuilderBasic(const ConcreteBuilderBasic& concreteBuilderBasic) = delete;		// copy constructor
+	ConcreteBuilderBasic operator=(const ConcreteBuilderBasic& concreteBuilderBasic) = delete;	// copy assignment operator
+	ConcreteBuilderBasic(const ConcreteBuilderBasic&& concreteBuilderBasic) = delete;		// move constructor
+	ConcreteBuilderBasic operator=(const ConcreteBuilderBasic&& concreteBuilderBasic) = delete;	// move assignment operator
+	~ConcreteBuilderBasic() {}									// destructor
 };
 
 /*
@@ -143,11 +143,11 @@ public:
 	}
 
 	// ... constructor (you can make what you need)
-	Director(const Director& director) = delete;					// copy constructor
+	Director(const Director& director) = delete;				// copy constructor
 	Director operator=(const Director& director) = delete;			// copy assignment operator
-	Director(const Director&& director) = delete;					// move constructor
+	Director(const Director&& director) = delete;				// move constructor
 	Director operator=(const Director&& director) = delete;			// move assignment operator
-	~Director() {}
+	~Director() {}								// destructor
 
 private:
 	std::shared_ptr<Builder> builder_ptr;

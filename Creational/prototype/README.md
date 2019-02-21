@@ -6,7 +6,7 @@ with object relationships, which are more dynamic. The pattern hides the complex
 of making new instances from the client. 
 
 
-### UML class diagram example for the Factory Method Design Pattern.
+### UML class diagram example for the Prototype Design Pattern.
 
  - Client - creates a new object by asking a prototype to clone itself.
  - Prototype - declares an interface for cloning itself.

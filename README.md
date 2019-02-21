@@ -71,11 +71,11 @@ Design patterns in this repository are based on
 [Head First: Design Patterns]: http://www.headfirstlabs.com/books/hfdp/ 
 [Wikipedia]: https://en.wikipedia.org/wiki/Software_design_pattern
 
-[Abstract Factory]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/abstract-factory
-[Builder]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/builder
-[Factory Method]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/factory-method
-[Prototype]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/prototype
-[Singleton]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/singleton
+[Abstract Factory]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Abstract%20Factory
+[Builder]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Builder
+[Factory Method]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Factory%20Method
+[Prototype]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/prototype
+[Singleton]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Singleton
 [Adapter]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/adapter
 [Bridge]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/bridge 
 [Composite]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/composite

@@ -15,7 +15,7 @@ of making new instances from the client.
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Creational/Factory%20Method/FactoryMethod.PNG">
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Creational/prototype/Prototype.PNG">
 </p>
 
 ### When to use

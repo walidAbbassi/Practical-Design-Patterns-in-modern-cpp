@@ -24,7 +24,7 @@ It is used to construct a complex object step by step and the final step will re
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Example-Design-Patterns/blob/master/Creational/Abstract%20Factory/Builder.PNG">
+src="https://github.com/walidAbbassi/Example-Design-Patterns/blob/master/Creational/Builder/Builder.PNG">
 </p>
 
 ### When to use

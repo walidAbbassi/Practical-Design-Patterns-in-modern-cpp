@@ -22,23 +22,23 @@ class Car {
 public:
 	virtual std::string getName() const = 0;
 	virtual std::string getManufacturer() const = 0;
-	friend std::ostream &operator<<(std::ostream &o, const std::unique_ptr<Car> &car)
+	friend std::ostream &operator<<(std::ostream &out, const std::unique_ptr<Car> &car)
 	{
-		return o << "car Name : " << car->getName() << " and Manufacturer by : " << car->getManufacturer();
+		return out << "car Name : " << car->getName() << " and Manufacturer by : " << car->getManufacturer();
 	}
 	// ...
 };
 
 /*
-* Renault Car ==> Concrete ProductA1 
+* Renault Car ==> Concrete ProductA1
 * define objects to be created by concrete factory
 */
 class Kangoo : public Car {
 public:
-	std::string getName() const {
+	std::string getName() const override {
 		return " Kangoo ";
 	}
-	std::string getManufacturer() const {
+	std::string getManufacturer() const override {
 		return " Renault ";
 	}
 	// ...
@@ -50,10 +50,10 @@ public:
 */
 class Cinquecento : public Car {
 public:
-	std::string getName() const {
+	std::string getName() const override {
 		return " Cinquecento ";
 	}
-	std::string getManufacturer() const {
+	std::string getManufacturer() const override {
 		return " Fiat ";
 	}
 	// ...
@@ -68,9 +68,9 @@ class Truck {
 public:
 	virtual std::string getName() const = 0;
 	virtual std::string getManufacturer() const = 0;
-	friend std::ostream &operator<<(std::ostream &o, const std::unique_ptr<Truck> &truck)
+	friend std::ostream &operator<<(std::ostream &out, const std::unique_ptr<Truck> &truck)
 	{
-		return o << "truck Name : " << truck->getName() << " and Manufacturer by : " << truck->getManufacturer();
+		return out << "truck Name : " << truck->getName() << " and Manufacturer by : " << truck->getManufacturer();
 	}
 	// ...
 };
@@ -81,10 +81,10 @@ public:
 */
 class Maxity : public Truck {
 public:
-	std::string getName() const {
+	std::string getName() const override {
 		return " Maxity ";
 	}
-	std::string getManufacturer() const {
+	std::string getManufacturer() const override {
 		return " Renault ";
 	}
 	// ...
@@ -96,10 +96,10 @@ public:
 */
 class Ducato : public Truck {
 public:
-	std::string getName() const {
+	std::string getName() const override {
 		return " Ducato ";
 	}
-	std::string getManufacturer() const {
+	std::string getManufacturer() const override {
 		return " Fiat ";
 	}
 	// ...
@@ -122,10 +122,10 @@ public:
 */
 class ConcreteFactoryFrench : public AbstractFactory {
 public:
-	std::unique_ptr<Car> createCar() {
+	std::unique_ptr<Car> createCar() override {
 		return std::make_unique<Kangoo>();
 	}
-	std::unique_ptr<Truck> createTruck() {
+	std::unique_ptr<Truck> createTruck() override {
 		return std::make_unique<Maxity>();
 	}
 	// ...
@@ -138,10 +138,10 @@ public:
 */
 class ConcreteFactoryItalian : public AbstractFactory {
 public:
-	std::unique_ptr<Car> createCar() {
+	std::unique_ptr<Car> createCar() override {
 		return std::make_unique<Cinquecento>();
 	}
-	std::unique_ptr<Truck> createTruck() {
+	std::unique_ptr<Truck> createTruck() override {
 		return std::make_unique<Ducato>();
 	}
 	// ...

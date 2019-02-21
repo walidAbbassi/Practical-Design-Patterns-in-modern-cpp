@@ -179,7 +179,7 @@ public:
 	ConcreteFactoryFrench operator=(const ConcreteFactoryFrench& concreteFactoryFrench) = delete;	// copy assignment operator
 	ConcreteFactoryFrench(const ConcreteFactoryFrench&& concreteFactoryFrench) = delete;		// move constructor
 	ConcreteFactoryFrench operator=(const ConcreteFactoryFrench&& concreteFactoryFrench) = delete;	// move assignment operator
-	~ConcreteFactoryFrench() {}																		// destructor
+	~ConcreteFactoryFrench() {}									// destructor
 };
 
 /*
@@ -202,7 +202,7 @@ public:
 	ConcreteFactoryItalian operator=(const ConcreteFactoryItalian& concreteFactoryItalian) = delete;	// copy assignment operator
 	ConcreteFactoryItalian(const ConcreteFactoryItalian&& concreteFactoryItalian) = delete;			// move constructor
 	ConcreteFactoryItalian operator=(const ConcreteFactoryItalian&& concreteFactoryItalian) = delete;	// move assignment operator
-	~ConcreteFactoryItalian() {}																		// destructor
+	~ConcreteFactoryItalian() {}										// destructor
 };
 
 /*

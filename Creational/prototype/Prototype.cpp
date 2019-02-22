@@ -60,7 +60,7 @@ public:
 */
 class ClientCrazyScientist {
 public:
-	static std::shared_ptr<PrototypeAnimal> cloningMachine(const std::shared_ptr<PrototypeAnimal> prototypeAnimal) {
+	static std::shared_ptr<PrototypeAnimal> cloningMachine(const std::shared_ptr<PrototypeAnimal>& prototypeAnimal) {
 		return prototypeAnimal->clone();
 	}
 	// ...

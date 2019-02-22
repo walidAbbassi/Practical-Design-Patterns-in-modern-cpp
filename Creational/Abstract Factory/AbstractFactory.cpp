@@ -152,7 +152,7 @@ public:
 	virtual std::unique_ptr<Car> createCar() = 0;		// virtual ProductA *createProductA() = 0;
 	virtual std::unique_ptr<Truck> createTruck() = 0;	// virtual ProductB *createProductB() = 0;
 
-														// ... constructor (you can make what you need)
+	// ... constructor (you can make what you need)
 	AbstractFactory() = default;							// default constructor
 	AbstractFactory(const AbstractFactory& abstractFactory) = delete;		// copy constructor
 	AbstractFactory(const AbstractFactory&& abstractFactory) = delete;		// move constructor

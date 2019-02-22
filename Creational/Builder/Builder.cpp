@@ -126,7 +126,7 @@ public:
 	Director(const std::shared_ptr<Builder> &builder) : builder_ptr(builder) {}
 
 	void set(const std::shared_ptr<Builder> &builder) {
-		if (builder_ptr) {
+		if (builder_ptr.expired()) {
 			builder_ptr.reset();	//builder_ptr = nullptr;
 		}
 		builder_ptr = builder;
@@ -135,9 +135,9 @@ public:
 
 	std::unique_ptr<Car> construct() {
 		std::unique_ptr<Car> car = std::make_unique<Car>();
-		builder_ptr->buildPartSeat(car);
-		builder_ptr->buildPartEngine(car);
-		builder_ptr->buildPartWheel(car);
+		builder_ptr.lock()->buildPartSeat(car);
+		builder_ptr.lock()->buildPartEngine(car);
+		builder_ptr.lock()->buildPartWheel(car);
 		return car;
 		// ...
 	}
@@ -150,7 +150,7 @@ public:
 	~Director() {}								// destructor
 
 private:
-	std::shared_ptr<Builder> builder_ptr;
+	std::weak_ptr<Builder> builder_ptr;
 };
 
 int main()

@@ -152,7 +152,7 @@ public:
 	virtual std::unique_ptr<Car> createCar() = 0;		// virtual ProductA *createProductA() = 0;
 	virtual std::unique_ptr<Truck> createTruck() = 0;	// virtual ProductB *createProductB() = 0;
 
-	// ... constructor (you can make what you need)
+														// ... constructor (you can make what you need)
 	AbstractFactory() = default;							// default constructor
 	AbstractFactory(const AbstractFactory& abstractFactory) = delete;		// copy constructor
 	AbstractFactory(const AbstractFactory&& abstractFactory) = delete;		// move constructor
@@ -222,8 +222,8 @@ int main()
 	application(factoryFrench);
 	application(factoryItalian);
 
-	ConcreteFactoryFrench *factoryFrench_ptr = new ConcreteFactoryFrench();
-	ConcreteFactoryItalian *factoryItalian_ptr = new ConcreteFactoryItalian();
+	std::shared_ptr<ConcreteFactoryFrench> factoryFrench_ptr = std::make_shared<ConcreteFactoryFrench>();
+	std::shared_ptr<ConcreteFactoryItalian> factoryItalian_ptr = std::make_shared<ConcreteFactoryItalian>();
 	std::unique_ptr<Car> car1 = factoryFrench_ptr->createCar();
 	std::cout << "Product car1: " << car1->getName() << std::endl;
 	std::unique_ptr<Car> car2 = factoryItalian_ptr->createCar();

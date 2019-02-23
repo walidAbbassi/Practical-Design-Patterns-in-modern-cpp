@@ -58,8 +58,8 @@ public:
 	ConcreteKangoo(const ConcreteKangoo& concreteKangoo) = delete;			// copy constructor
 	ConcreteKangoo operator=(const ConcreteKangoo& concreteKangoo) = delete;	// copy assignment operator
 	ConcreteKangoo(ConcreteKangoo&& concreteKangoo) = delete;			// move constructor
-	ConcreteKangoo operator=(ConcreteKangoo&& concreteKangoo) = delete;	// move assignment operator
-	~ConcreteKangoo() {}														// destructor
+	ConcreteKangoo operator=(ConcreteKangoo&& concreteKangoo) = delete;		// move assignment operator
+	~ConcreteKangoo() {}								// destructor
 };
 
 /*
@@ -82,8 +82,8 @@ public:
 	ConcreteCinquecento(const ConcreteCinquecento& concreteCinquecento) = delete;			// copy constructor
 	ConcreteCinquecento operator=(const ConcreteCinquecento& concreteCinquecento) = delete;		// copy assignment operator
 	ConcreteCinquecento(ConcreteCinquecento&& concreteCinquecento) = delete;			// move constructor
-	ConcreteCinquecento operator=(ConcreteCinquecento&& concreteCinquecento) = delete;	// move assignment operator
-	~ConcreteCinquecento() {}																	// destructor
+	ConcreteCinquecento operator=(ConcreteCinquecento&& concreteCinquecento) = delete;		// move assignment operator
+	~ConcreteCinquecento() {}									// destructor
 };
 
 /*
@@ -98,7 +98,7 @@ public:
 	// ... constructor (you can make what you need)
 	Creator() = default;								// default constructor
 	Creator(const Creator& creator) = delete;					// copy constructor
-	Creator(Creator&& creator) = delete;					// move constructor
+	Creator(Creator&& creator) = delete;						// move constructor
 	virtual ~Creator() {}								// destructor
 };
 
@@ -131,8 +131,8 @@ public:
 	ConcreteCreator() = default;													// default constructor
 	ConcreteCreator(const ConcreteCreator& concreteCreator) = delete;		// copy constructor
 	ConcreteCreator operator=(const ConcreteCreator& concreteCreator) = delete;	// copy assignment operator
-	ConcreteCreator(ConcreteCreator&& concreteCreator) = delete;		// move constructor
-	ConcreteCreator operator=(ConcreteCreator&& concreteCreator) = delete;	// move assignment operator
+	ConcreteCreator(ConcreteCreator&& concreteCreator) = delete;			// move constructor
+	ConcreteCreator operator=(ConcreteCreator&& concreteCreator) = delete;		// move assignment operator
 	~ConcreteCreator(){}															// destructor
 };
 

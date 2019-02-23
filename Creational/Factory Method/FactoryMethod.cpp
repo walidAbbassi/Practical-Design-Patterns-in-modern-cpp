@@ -34,7 +34,7 @@ public:
 	// ... constructor (you can make what you need)
 	Car() = default;					// default constructor
 	Car(const Car& car) = delete;				// copy constructor
-	Car(const Car&& car) = delete;				// move constructor
+	Car(Car&& car) = delete;				// move constructor
 	virtual ~Car() {}					// destructor
 };
 
@@ -57,8 +57,8 @@ public:
 	ConcreteKangoo() = default;							// default constructor
 	ConcreteKangoo(const ConcreteKangoo& concreteKangoo) = delete;			// copy constructor
 	ConcreteKangoo operator=(const ConcreteKangoo& concreteKangoo) = delete;	// copy assignment operator
-	ConcreteKangoo(const ConcreteKangoo&& concreteKangoo) = delete;			// move constructor
-	ConcreteKangoo operator=(const ConcreteKangoo&& concreteKangoo) = delete;	// move assignment operator
+	ConcreteKangoo(ConcreteKangoo&& concreteKangoo) = delete;			// move constructor
+	ConcreteKangoo operator=(ConcreteKangoo&& concreteKangoo) = delete;	// move assignment operator
 	~ConcreteKangoo() {}														// destructor
 };
 
@@ -81,8 +81,8 @@ public:
 	ConcreteCinquecento() = default;								// default constructor
 	ConcreteCinquecento(const ConcreteCinquecento& concreteCinquecento) = delete;			// copy constructor
 	ConcreteCinquecento operator=(const ConcreteCinquecento& concreteCinquecento) = delete;		// copy assignment operator
-	ConcreteCinquecento(const ConcreteCinquecento&& concreteCinquecento) = delete;			// move constructor
-	ConcreteCinquecento operator=(const ConcreteCinquecento&& concreteCinquecento) = delete;	// move assignment operator
+	ConcreteCinquecento(ConcreteCinquecento&& concreteCinquecento) = delete;			// move constructor
+	ConcreteCinquecento operator=(ConcreteCinquecento&& concreteCinquecento) = delete;	// move assignment operator
 	~ConcreteCinquecento() {}																	// destructor
 };
 
@@ -98,7 +98,7 @@ public:
 	// ... constructor (you can make what you need)
 	Creator() = default;								// default constructor
 	Creator(const Creator& creator) = delete;					// copy constructor
-	Creator(const Creator&& creator) = delete;					// move constructor
+	Creator(Creator&& creator) = delete;					// move constructor
 	virtual ~Creator() {}								// destructor
 };
 
@@ -131,8 +131,8 @@ public:
 	ConcreteCreator() = default;													// default constructor
 	ConcreteCreator(const ConcreteCreator& concreteCreator) = delete;		// copy constructor
 	ConcreteCreator operator=(const ConcreteCreator& concreteCreator) = delete;	// copy assignment operator
-	ConcreteCreator(const ConcreteCreator&& concreteCreator) = delete;		// move constructor
-	ConcreteCreator operator=(const ConcreteCreator&& concreteCreator) = delete;	// move assignment operator
+	ConcreteCreator(ConcreteCreator&& concreteCreator) = delete;		// move constructor
+	ConcreteCreator operator=(ConcreteCreator&& concreteCreator) = delete;	// move assignment operator
 	~ConcreteCreator(){}															// destructor
 };
 

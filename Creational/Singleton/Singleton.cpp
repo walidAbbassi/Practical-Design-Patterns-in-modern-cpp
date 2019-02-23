@@ -8,7 +8,6 @@
 *
 */
 
-#include "stdafx.h"
 #include <iostream>
 #include <memory>
 #include <mutex>

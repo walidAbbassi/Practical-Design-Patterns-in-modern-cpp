@@ -30,7 +30,7 @@ public:
 	// ... constructor (you can make what you need)
 	Car() = default;					// default constructor
 	Car(const Car& car) = delete;				// copy constructor
-	Car(const Car&& car) = delete;				// move constructor
+	Car(Car&& car) = delete;				// move constructor
 	virtual ~Car() {}					// destructor
 };
 
@@ -53,8 +53,8 @@ public:
 	Kangoo() = default;					// default constructor
 	Kangoo(const Kangoo& kangoo) = delete;			// copy constructor
 	Kangoo operator=(const Kangoo& kangoo) = delete;	// copy assignment operator
-	Kangoo(const Kangoo&& kangoo) = delete;			// move constructor
-	Kangoo operator=(const Kangoo&& kangoo) = delete;	// move assignment operator
+	Kangoo(Kangoo&& kangoo) = delete;			// move constructor
+	Kangoo operator=(Kangoo&& kangoo) = delete;	// move assignment operator
 	~Kangoo() {}						// destructor
 };
 
@@ -77,8 +77,8 @@ public:
 	Cinquecento() = default;						// default constructor
 	Cinquecento(const Cinquecento& cinquecento) = delete;			// copy constructor
 	Cinquecento operator=(const Cinquecento& cinquecento) = delete;		// copy assignment operator
-	Cinquecento(const Cinquecento&& cinquecento) = delete;			// move constructor
-	Cinquecento operator=(const Cinquecento&& cinquecento) = delete;	// move assignment operator
+	Cinquecento(Cinquecento&& cinquecento) = delete;			// move constructor
+	Cinquecento operator=(Cinquecento&& cinquecento) = delete;	// move assignment operator
 	~Cinquecento() {}							// destructor
 };
 
@@ -99,7 +99,7 @@ public:
 	// ... constructor (you can make what you need)
 	Truck() = default;					// default constructor
 	Truck(const Truck& truck) = delete;			// copy constructor
-	Truck(const Truck&& truck) = delete;			// move constructor
+	Truck(Truck&& truck) = delete;			// move constructor
 	virtual ~Truck() {}					// destructor
 };
 
@@ -122,8 +122,8 @@ public:
 	Maxity() = default;						// default constructor
 	Maxity(const Maxity& maxity) = delete;				// copy constructor
 	Maxity operator=(const Maxity& maxity) = delete;		// copy assignment operator
-	Maxity(const Maxity&& maxity) = delete;				// move constructor
-	Maxity operator=(const Maxity&& maxity) = delete;		// move assignment operator
+	Maxity(Maxity&& maxity) = delete;				// move constructor
+	Maxity operator=(Maxity&& maxity) = delete;		// move assignment operator
 	~Maxity() {}							// destructor
 };
 
@@ -146,8 +146,8 @@ public:
 	Ducato() = default;						// default constructor
 	Ducato(const Ducato& ducato) = delete;				// copy constructor
 	Ducato operator=(const Ducato& ducato) = delete;		// copy assignment operator
-	Ducato(const Ducato&& ducato) = delete;				// move constructor
-	Ducato operator=(const Ducato&& ducato) = delete;		// move assignment operator
+	Ducato(Ducato&& ducato) = delete;				// move constructor
+	Ducato operator=(Ducato&& ducato) = delete;		// move assignment operator
 	~Ducato() {}							// destructor
 };
 
@@ -163,7 +163,7 @@ public:
 	// ... constructor (you can make what you need)
 	AbstractFactory() = default;							// default constructor
 	AbstractFactory(const AbstractFactory& abstractFactory) = delete;		// copy constructor
-	AbstractFactory(const AbstractFactory&& abstractFactory) = delete;		// move constructor
+	AbstractFactory(AbstractFactory&& abstractFactory) = delete;		// move constructor
 	virtual ~AbstractFactory() {}							// destructor
 };
 
@@ -187,8 +187,8 @@ public:
 	ConcreteFactoryFrench() = default;								// default constructor
 	ConcreteFactoryFrench(const ConcreteFactoryFrench& concreteFactoryFrench) = delete;		// copy constructor
 	ConcreteFactoryFrench operator=(const ConcreteFactoryFrench& concreteFactoryFrench) = delete;	// copy assignment operator
-	ConcreteFactoryFrench(const ConcreteFactoryFrench&& concreteFactoryFrench) = delete;		// move constructor
-	ConcreteFactoryFrench operator=(const ConcreteFactoryFrench&& concreteFactoryFrench) = delete;	// move assignment operator
+	ConcreteFactoryFrench(ConcreteFactoryFrench&& concreteFactoryFrench) = delete;		// move constructor
+	ConcreteFactoryFrench operator=(ConcreteFactoryFrench&& concreteFactoryFrench) = delete;	// move assignment operator
 	~ConcreteFactoryFrench() {}									// destructor
 };
 
@@ -212,8 +212,8 @@ public:
 	ConcreteFactoryItalian() = default;									// default constructor
 	ConcreteFactoryItalian(const ConcreteFactoryItalian& concreteFactoryItalian) = delete;			// copy constructor
 	ConcreteFactoryItalian operator=(const ConcreteFactoryItalian& concreteFactoryItalian) = delete;	// copy assignment operator
-	ConcreteFactoryItalian(const ConcreteFactoryItalian&& concreteFactoryItalian) = delete;			// move constructor
-	ConcreteFactoryItalian operator=(const ConcreteFactoryItalian&& concreteFactoryItalian) = delete;	// move assignment operator
+	ConcreteFactoryItalian(ConcreteFactoryItalian&& concreteFactoryItalian) = delete;			// move constructor
+	ConcreteFactoryItalian operator=(ConcreteFactoryItalian&& concreteFactoryItalian) = delete;	// move assignment operator
 	~ConcreteFactoryItalian() {}										// destructor
 };
 

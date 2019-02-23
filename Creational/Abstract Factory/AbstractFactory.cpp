@@ -40,10 +40,12 @@ public:
 */
 class Kangoo : public Car {
 public:
-	std::string getName() const override {
+	std::string getName() const override 
+	{
 		return " Kangoo ";
 	}
-	std::string getManufacturer() const override {
+	std::string getManufacturer() const override 
+	{
 		return " Renault ";
 	}
 
@@ -62,10 +64,12 @@ public:
 */
 class Cinquecento : public Car {
 public:
-	std::string getName() const override {
+	std::string getName() const override 
+	{
 		return " Cinquecento ";
 	}
-	std::string getManufacturer() const override {
+	std::string getManufacturer() const override 
+	{
 		return " Fiat ";
 	}
 
@@ -105,10 +109,12 @@ public:
 */
 class Maxity : public Truck {
 public:
-	std::string getName() const override {
+	std::string getName() const override 
+	{
 		return " Maxity ";
 	}
-	std::string getManufacturer() const override {
+	std::string getManufacturer() const override 
+	{
 		return " Renault ";
 	}
 
@@ -127,10 +133,12 @@ public:
 */
 class Ducato : public Truck {
 public:
-	std::string getName() const override {
+	std::string getName() const override 
+	{
 		return " Ducato ";
 	}
-	std::string getManufacturer() const override {
+	std::string getManufacturer() const override 
+	{
 		return " Fiat ";
 	}
 
@@ -166,10 +174,12 @@ public:
 */
 class ConcreteFactoryFrench : public AbstractFactory {
 public:
-	std::unique_ptr<Car> createCar() override {
+	std::unique_ptr<Car> createCar() override 
+	{
 		return std::make_unique<Kangoo>();
 	}
-	std::unique_ptr<Truck> createTruck() override {
+	std::unique_ptr<Truck> createTruck() override 
+	{
 		return std::make_unique<Maxity>();
 	}
 
@@ -189,10 +199,12 @@ public:
 */
 class ConcreteFactoryItalian : public AbstractFactory {
 public:
-	std::unique_ptr<Car> createCar() override {
+	std::unique_ptr<Car> createCar() override 
+	{
 		return std::make_unique<Cinquecento>();
 	}
-	std::unique_ptr<Truck> createTruck() override {
+	std::unique_ptr<Truck> createTruck() override 
+	{
 		return std::make_unique<Ducato>();
 	}
 
@@ -208,7 +220,8 @@ public:
 /*
 * example use of AbstractFactory
 */
-void application(AbstractFactory& factory) {
+void application(AbstractFactory& factory) 
+{
 	std::unique_ptr<Car> car_ptr = factory.createCar();
 	std::unique_ptr<Truck> truck_ptr = factory.createTruck();
 	std::cout << car_ptr << std::endl;

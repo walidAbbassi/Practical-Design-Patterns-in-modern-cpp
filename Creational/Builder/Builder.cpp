@@ -19,13 +19,16 @@
 */
 class Car {
 public:
-	void makeSeat(const std::string &part) {
+	void makeSeat(const std::string &part) 
+	{
 		partSeat = part;
 	}
-	void makeEngine(const std::string &part) {
+	void makeEngine(const std::string &part) 
+	{
 		partEngine = part;
-	}
-	void makeWheel(const std::string &part) {
+}
+	void makeWheel(const std::string &part) 
+	{
 		partWheel = part;
 	}
 
@@ -73,13 +76,16 @@ public:
 */
 class ConcreteBuilderLuxury : public Builder {
 public:
-	void buildPartSeat(const std::unique_ptr<Car> &car) override {
+	void buildPartSeat(const std::unique_ptr<Car> &car) override 
+	{
 		car->makeSeat("Luxury Seat");
 	}
-	void buildPartEngine(const std::unique_ptr<Car> &car) override {
+	void buildPartEngine(const std::unique_ptr<Car> &car) override 
+	{
 		car->makeEngine("Luxury Engine");
 	}
-	void buildPartWheel(const std::unique_ptr<Car> &car) override {
+	void buildPartWheel(const std::unique_ptr<Car> &car) override 
+	{
 		car->makeWheel("Luxury Wheel");
 	}
 
@@ -98,13 +104,16 @@ public:
 */
 class ConcreteBuilderBasic : public Builder {
 public:
-	void buildPartSeat(const std::unique_ptr<Car> &car) override {
+	void buildPartSeat(const std::unique_ptr<Car> &car) override 
+	{
 		car->makeSeat("Basic Seat");
 	}
-	void buildPartEngine(const std::unique_ptr<Car> &car) override {
+	void buildPartEngine(const std::unique_ptr<Car> &car) override 
+	{
 		car->makeEngine("Basic Engine");
 	}
-	void buildPartWheel(const std::unique_ptr<Car> &car) override {
+	void buildPartWheel(const std::unique_ptr<Car> &car) override 
+	{
 		car->makeWheel("Basic Wheel");
 	}
 
@@ -125,15 +134,18 @@ class Director {
 public:
 	Director(const std::shared_ptr<Builder> &builder) : builder_ptr(builder) {}
 
-	void set(const std::shared_ptr<Builder> &builder) {
-		if (builder_ptr.expired()) {
+	void set(const std::shared_ptr<Builder> &builder) 
+	{
+		if (!builder_ptr.expired()) 
+		{
 			builder_ptr.reset();	//builder_ptr = nullptr;
 		}
 		builder_ptr = builder;
 	}
 
 
-	std::unique_ptr<Car> construct() {
+	std::unique_ptr<Car> construct() 
+	{
 		std::unique_ptr<Car> car = std::make_unique<Car>();
 		builder_ptr.lock()->buildPartSeat(car);
 		builder_ptr.lock()->buildPartEngine(car);

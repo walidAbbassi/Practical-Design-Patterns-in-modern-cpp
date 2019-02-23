@@ -15,10 +15,10 @@
 #include <memory>
 
 /*
- * Car  ==>  Product
- * products implement the same interface so that the classes can refer
- * to the interface not the concrete product
- */
+* Car  ==>  Product
+* products implement the same interface so that the classes can refer
+* to the interface not the concrete product
+*/
 class Car {
 public:
 	virtual std::string getName() const = 0;
@@ -26,7 +26,7 @@ public:
 	friend std::ostream &operator<<(std::ostream &out, const std::unique_ptr<Car> &car)
 	{
 		if (car == nullptr) {
-			return out << "car empty" ;
+			return out << "car empty";
 		}
 		return out << "car Name : " << car->getName() << " and Manufacturer by : " << car->getManufacturer();
 	}
@@ -44,10 +44,12 @@ public:
 */
 class ConcreteKangoo : public Car {
 public:
-	std::string getName() const override {
+	std::string getName() const override 
+	{
 		return " Kangoo ";
 	}
-	std::string getManufacturer() const override {
+	std::string getManufacturer() const override 
+	{
 		return " Renault ";
 	}
 
@@ -66,10 +68,12 @@ public:
 */
 class ConcreteCinquecento : public Car {
 public:
-	std::string getName() const override {
+	std::string getName() const override 
+	{
 		return " Cinquecento ";
 	}
-	std::string getManufacturer() const override {
+	std::string getManufacturer() const override 
+	{
 		return " Fiat ";
 	}
 
@@ -106,15 +110,19 @@ public:
 */
 class ConcreteCreator : public Creator {
 public:
-	std::unique_ptr<Car> createProductCar(std::string nationality) override {
+	std::unique_ptr<Car> createProductCar(std::string nationality) override 
+	{
 		std::transform(nationality.begin(), nationality.end(), nationality.begin(), tolower);
-		if (nationality == "fr") {
+		if (nationality == "fr") 
+		{
 			return std::make_unique<ConcreteKangoo>();
 		}
-		else if (nationality == "it") {
+		else if (nationality == "it") 
+		{
 			return std::make_unique<ConcreteCinquecento>();
 		}
-		else {
+		else 
+		{
 			return nullptr;
 		}
 	}

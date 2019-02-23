@@ -42,7 +42,7 @@ public:
 	Car(const Car& car) = delete;				// copy constructor
 	Car operator=(const Car& car) = delete;			// copy assignment operator
 	Car(const Car&& car) = delete;				// move constructor
-	Car operator=(const Car&& car) = delete;		// move assignment operator
+	Car operator=(Car&& car) = delete;		// move assignment operator
 	~Car() {}						// destructor
 
 private:
@@ -66,7 +66,7 @@ public:
 	// ... constructor (you can make what you need)
 	Builder() = default;					// default constructor
 	Builder(const Builder& builder) = delete;		// copy constructor
-	Builder(const Builder&& builder) = delete;		// move constructor
+	Builder(Builder&& builder) = delete;		// move constructor
 	virtual ~Builder() {}					// destructor
 };
 
@@ -93,8 +93,8 @@ public:
 	ConcreteBuilderLuxury() = default;								// default constructor
 	ConcreteBuilderLuxury(const ConcreteBuilderLuxury& concreteBuilderLuxury) = delete;		// copy constructor
 	ConcreteBuilderLuxury operator=(const ConcreteBuilderLuxury& concreteBuilderLuxury) = delete;	// copy assignment operator
-	ConcreteBuilderLuxury(const ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;		// move constructor
-	ConcreteBuilderLuxury operator=(const ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;	// move assignment operator
+	ConcreteBuilderLuxury(ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;		// move constructor
+	ConcreteBuilderLuxury operator=(ConcreteBuilderLuxury&& concreteBuilderLuxury) = delete;	// move assignment operator
 	~ConcreteBuilderLuxury() {}									// destructor
 };
 
@@ -121,8 +121,8 @@ public:
 	ConcreteBuilderBasic() = default;								// default constructor
 	ConcreteBuilderBasic(const ConcreteBuilderBasic& concreteBuilderBasic) = delete;		// copy constructor
 	ConcreteBuilderBasic operator=(const ConcreteBuilderBasic& concreteBuilderBasic) = delete;	// copy assignment operator
-	ConcreteBuilderBasic(const ConcreteBuilderBasic&& concreteBuilderBasic) = delete;		// move constructor
-	ConcreteBuilderBasic operator=(const ConcreteBuilderBasic&& concreteBuilderBasic) = delete;	// move assignment operator
+	ConcreteBuilderBasic(ConcreteBuilderBasic&& concreteBuilderBasic) = delete;		// move constructor
+	ConcreteBuilderBasic operator=(ConcreteBuilderBasic&& concreteBuilderBasic) = delete;	// move assignment operator
 	~ConcreteBuilderBasic() {}									// destructor
 };
 
@@ -157,8 +157,8 @@ public:
 	// ... constructor (you can make what you need)
 	Director(const Director& director) = delete;				// copy constructor
 	Director operator=(const Director& director) = delete;			// copy assignment operator
-	Director(const Director&& director) = delete;				// move constructor
-	Director operator=(const Director&& director) = delete;			// move assignment operator
+	Director(Director&& director) = delete;				// move constructor
+	Director operator=(Director&& director) = delete;			// move assignment operator
 	~Director() {}								// destructor
 
 private:

@@ -24,7 +24,8 @@ public:
 		std::cout << "Initializing Singleton" << std::endl;
 	}
 
-	static Singleton &getInstance() {
+	static Singleton &getInstance() 
+	{
 		std::call_once(Singleton::onceFlag, []() {
 			NofityInit();
 			instance.reset(new Singleton());

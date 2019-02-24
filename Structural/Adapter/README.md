@@ -1,0 +1,28 @@
+## Adapter
+
+Convert the interface of a class into another interface the clients expect.
+Adapter lets classes work together that couldn't otherwise because of
+incompatible interfaces, ie. allows to use a client with an incompatible 
+interface by an Adapter that does the conversion. Adapter has structural purpose
+and can be applied on classes and also on object. A class adapter uses multiple 
+inheritance to adapt one interface to another and the object adapter uses object 
+composition to combine classes with different interfaces.
+
+
+### UML class diagram example for the Adapter Design Pattern.
+
+ - Target - defines the domain-specific interface that Client uses.
+ - Adapter - adapts the interface Adaptee to the Target interface.
+ - Adaptee - defines an existing interface that needs adapting.
+ - Client - collaborates with objects conforming to the Target interface.
+
+ 
+<p align="center">
+<img 
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Creational/prototype/Prototype.PNG">
+</p>
+
+### When to use
+
+* you want to use an existing class, and its interface does not match the one you need
+* you want to create a reusable class that cooperates with classes that don't necessarily have compatible interfaces

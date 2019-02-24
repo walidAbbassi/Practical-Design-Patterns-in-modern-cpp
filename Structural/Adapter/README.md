@@ -19,7 +19,7 @@ composition to combine classes with different interfaces.
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Creational/prototype/Prototype.PNG">
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Structural/Adapter/Adapter.PNG">
 </p>
 
 ### When to use

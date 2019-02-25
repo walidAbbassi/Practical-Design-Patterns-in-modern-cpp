@@ -26,7 +26,7 @@ public:
 		return out << "Product A Name : " << product_A->getName();
 	}
 
-	virtual ~Product_A() {}					// destructor
+	virtual ~Product_A() {}
 };
 
 /*
@@ -40,7 +40,7 @@ public:
 		return " Concrete Product A1 ";
 	}
 
-	~ConcreteProduct_A1() {}						// destructor
+	~ConcreteProduct_A1() {}
 };
 
 /*
@@ -54,7 +54,7 @@ public:
 		return " Concrete Product A2 ";
 	}
 
-	~ConcreteProduct_A2() {}							// destructor
+	~ConcreteProduct_A2() {}
 };
 
 /*
@@ -70,7 +70,7 @@ public:
 		return out << "product B Name : " << product_B->getName();
 	}
 
-	virtual ~Product_B() {}					// destructor
+	virtual ~Product_B() {}
 };
 
 /*
@@ -84,7 +84,7 @@ public:
 		return " Concrete Product B1 ";
 	}
 
-	~ConcreteProduct_B1() {}							// destructor
+	~ConcreteProduct_B1() {}
 };
 
 /*
@@ -98,7 +98,7 @@ public:
 		return " Concrete Product B2 ";
 	}
 
-	~ConcreteProduct_B2() {}							// destructor
+	~ConcreteProduct_B2() {}
 };
 
 /*
@@ -110,7 +110,7 @@ public:
 	virtual std::unique_ptr<Product_A> createProduct_A() = 0;
 	virtual std::unique_ptr<Product_B> createProduct_B() = 0;
 
-	virtual ~AbstractFactory() {}							// destructor
+	virtual ~AbstractFactory() {}
 };
 
 /*
@@ -129,7 +129,7 @@ public:
 		return std::make_unique<ConcreteProduct_B1>();
 	}
 
-	~ConcreteFactory_1() {}									// destructor
+	~ConcreteFactory_1() {}
 };
 
 /*
@@ -148,7 +148,7 @@ public:
 		return std::make_unique<ConcreteProduct_B2>();
 	}
 
-	~ConcreteFactory_2() {}										// destructor
+	~ConcreteFactory_2() {}
 };
 
 /*

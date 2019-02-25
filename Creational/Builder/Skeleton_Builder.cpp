@@ -37,7 +37,7 @@ public:
 		return out << " part 1 : " << product->part1 << " , part 2 : " << product->part2 << " and part3 : " << product->part3;
 	}
 
-	~Product() {}						// destructor
+	~Product() {}
 
 private:
 	std::string part1;
@@ -57,7 +57,7 @@ public:
 	virtual void buildPart2(const std::unique_ptr<Product> &product) = 0;
 	virtual void buildPart3(const std::unique_ptr<Product> &product) = 0;
 
-	virtual ~Builder() {}					// destructor
+	virtual ~Builder() {}
 };
 
 /*
@@ -79,7 +79,7 @@ public:
 		product->makePart3("build_X_Part3");
 	}
 
-	~ConcreteBuilder_X() {}									// destructor
+	~ConcreteBuilder_X() {}
 };
 
 /*
@@ -101,7 +101,7 @@ public:
 		product->makePart3("build_Y_Part3");
 	}
 
-	~ConcreteBuilder_Y() {}									// destructor
+	~ConcreteBuilder_Y() {}
 };
 
 /*
@@ -132,7 +132,7 @@ public:
 		// ...
 	}
 
-	~Director() {}								// destructor
+	~Director() {}
 
 private:
 	std::weak_ptr<Builder> builder_ptr;

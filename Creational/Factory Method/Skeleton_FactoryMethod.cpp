@@ -30,7 +30,7 @@ public:
 		return out << "product Name : " << product->getName() ;
 	}
 
-	virtual ~Product() {}					// destructor
+	virtual ~Product() {}
 };
 
 /*
@@ -44,7 +44,7 @@ public:
 		return " Product X ";
 	}
 
-	~ConcreteProduct_X() {}								// destructor
+	~ConcreteProduct_X() {}
 };
 
 /*
@@ -58,7 +58,7 @@ public:
 		return " Product Y ";
 	}
 
-	~ConcreteProduct_Y() {}									// destructor
+	~ConcreteProduct_Y() {}
 };
 
 /*
@@ -70,7 +70,7 @@ class Creator {
 public:
 	virtual std::unique_ptr<Product> createProduct(std::string type) = 0;
 
-	virtual ~Creator() {}								// destructor
+	virtual ~Creator() {}
 };
 
 /*

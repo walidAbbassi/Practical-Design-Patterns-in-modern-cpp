@@ -21,8 +21,8 @@ class Prototype {
 public:
 	virtual std::shared_ptr<Prototype> clone() = 0;
 	virtual std::string getType() const = 0;
-	virtual ~Prototype() {}					// destructor
-													// ...
+	virtual ~Prototype() {}
+	// ...
 };
 
 /*

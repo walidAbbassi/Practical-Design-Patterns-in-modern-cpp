@@ -15,7 +15,7 @@ The pattern has structural purpose and applies to objects.
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Structural/Bridge/Bridge.PNG">
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Structural/Composite/Composite.PNG">
 </p>
 
 ### When to use

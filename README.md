@@ -51,8 +51,8 @@ objects).
 In my repository you can find implementation of desgin patterns also in languages as 
 
 * [Design Patterns in C++]
-* [Design Patterns in Java later]
 * [Design Patterns in Python later]
+* [Design Patterns in Java later]
 
 ### References
 Design patterns in this repository are based on
@@ -63,8 +63,8 @@ Design patterns in this repository are based on
 * [Wikipedia]
 
 [Design Patterns in C++]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
-[Design Patterns in Java]: https://github.com/JakubVojvoda/design-patterns-java
 [Design Patterns in Python]: https://github.com/JakubVojvoda/design-patterns-python
+[Design Patterns in Java]: https://github.com/JakubVojvoda/design-patterns-java
 
 [SOLID]: https://en.wikipedia.org/wiki/SOLID
 [Design Patterns by The "Gang of Four"]: https://en.wikipedia.org/wiki/Design_Patterns

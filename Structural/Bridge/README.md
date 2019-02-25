@@ -14,7 +14,7 @@ Bridge pattern has structural purpose and applies to objects, so it deals with t
  
 <p align="center">
 <img 
-src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Structural/Adapter/Adapter.PNG">
+src="https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/blob/master/Structural/Bridge/Bridge.PNG">
 </p>
 
 ### When to use

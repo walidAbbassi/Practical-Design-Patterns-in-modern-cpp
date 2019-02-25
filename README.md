@@ -51,8 +51,8 @@ objects).
 In my repository you can find implementation of desgin patterns also in languages as 
 
 * [Design Patterns in C++]
-* [Design Patterns in Java]
-* [Design Patterns in Python]
+* [Design Patterns in Java later]
+* [Design Patterns in Python later]
 
 ### References
 Design patterns in this repository are based on
@@ -62,7 +62,7 @@ Design patterns in this repository are based on
 * [Head First: Design Patterns]
 * [Wikipedia]
 
-[Design Patterns in C++]: https://github.com/JakubVojvoda/design-patterns-cpp
+[Design Patterns in C++]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Design Patterns in Java]: https://github.com/JakubVojvoda/design-patterns-java
 [Design Patterns in Python]: https://github.com/JakubVojvoda/design-patterns-python
 
@@ -76,21 +76,21 @@ Design patterns in this repository are based on
 [Factory Method]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Factory%20Method
 [Prototype]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/prototype
 [Singleton]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Singleton
-[Adapter]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/adapter
-[Bridge]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/bridge 
-[Composite]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/composite
-[Decorator]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/decorator
-[Façade]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/facade
-[Flyweight]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/flyweight
-[Proxy]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/proxy
-[Chain of Responsibility]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/chain-of-responsibility
-[Command]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/command
-[Interpreter]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/interpreter
-[Iterator]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/iterator
-[Mediator]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/mediator
-[Memento]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/memento
-[Observer]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/observer
-[State]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/state
-[Strategy]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/strategy
-[Template Method]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/template-method
-[Visitor]: https://github.com/JakubVojvoda/design-patterns-cpp/tree/master/visitor
+[Adapter]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Adapter
+[Bridge]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Bridge
+[Composite]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Composite
+[Decorator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Façade]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Flyweight]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Proxy]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Chain of Responsibility]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Command]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Interpreter]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Iterator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Mediator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Memento]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Observer]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[State]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Strategy]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Template Method]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Visitor]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp

@@ -39,16 +39,19 @@ public:
 
 	Composite() = default;
 
-	void add(const std::weak_ptr<Component> &component) 
+	void add(const std::weak_ptr<Component> &component)
 	{
-		children.push_back(component);
+		if (!component.expired())
+		{
+			children.push_back(component);
+		}		
 	}
 
-	void display() 
+	void display()
 	{
 		std::cout << " (";
 		//for_each(children.begin(), children.end(), std::mem_fun(&Component::display));  ==> old if you use raw pointer in your project
-		for_each(children.begin(), children.end(), [=](std::weak_ptr<Component> component) {component.lock()->display(); });
+		for_each(children.begin(), children.end(), [=](std::weak_ptr<Component> component) {if (!component.expired()) { component.lock()->display(); } });
 		std::cout << ") ";
 
 	}
@@ -68,7 +71,7 @@ class Leaf : public Component {
 public:
 	Leaf(std::string name) : name(name) {}
 
-	void display() 
+	void display()
 	{
 		std::cout << "[" << name << "]";
 	}

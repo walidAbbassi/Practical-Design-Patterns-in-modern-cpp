@@ -38,21 +38,32 @@ public:
 class SongGroup : public SongComponent {
 public:
 
-	SongGroup(std::string songGroupName):songGroupName(songGroupName){}
+	SongGroup(std::string songGroupName) :songGroupName(songGroupName){}
 
-	void addSong(const std::weak_ptr<SongComponent> &songComponent) 
+	void addSong(const std::weak_ptr<SongComponent> &songComponent)
 	{
-		children.push_back(songComponent);
+		if (!songComponent.expired())
+		{
+			children.push_back(songComponent);
+		}
 	}
 
-	void displaySongInfo() 
+	void displaySongInfo()
 	{
 		std::cout << " (";
 
-		//for_each(children.begin(), children.end(), std::mem_fun(&SongComponent::displaySongInfo));  ==> old if you use raw pointer in your project
-		for_each(children.begin(), children.end(), [=](std::weak_ptr<SongComponent> songComponent) {songComponent.lock()->displaySongInfo(); });
+		//for_each(children.begin(), children.end(), std::mem_fun(&SongComponent::displaySongInfo));  ==> old if you use raw pointer in your project		
+		// or loop for range
+		/*for (const auto& songComponent : children)
+		{
+			if (!songComponent.expired()) 
+			{
+				songComponent.lock()->displaySongInfo(); 
+			}
+		}*/
+		for_each(children.begin(), children.end(), [=](std::weak_ptr<SongComponent> songComponent) {if (!songComponent.expired()) { songComponent.lock()->displaySongInfo(); } });
 
-		std::cout << ") " ;
+		std::cout << ") ";
 	}
 
 	std::string getName() { return songGroupName; }
@@ -73,7 +84,7 @@ class Song : public SongComponent {
 public:
 	Song(std::string songName) : songName(songName) {}
 
-	void displaySongInfo() 
+	void displaySongInfo()
 	{
 		std::cout << "[" << songName << "]";
 	}

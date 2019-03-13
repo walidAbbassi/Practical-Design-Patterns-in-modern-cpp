@@ -19,7 +19,7 @@
 */
 class PrototypeAnimal {
 public:
-	virtual std::shared_ptr<PrototypeAnimal> clone() = 0;
+	virtual std::unique_ptr<PrototypeAnimal> clone() = 0;
 	virtual std::string getType() const = 0;
 	virtual ~PrototypeAnimal() {}					// destructor
 	// ...
@@ -31,9 +31,9 @@ public:
 */
 class ConcretePrototypeSheep : public PrototypeAnimal {
 public:
-	std::shared_ptr<PrototypeAnimal> clone() override 
+	std::unique_ptr<PrototypeAnimal> clone() override
 	{
-		return std::make_shared<ConcretePrototypeSheep>(*this);
+		return std::make_unique<ConcretePrototypeSheep>(*this);
 	}
 	std::string getType() const override 
 	{
@@ -48,9 +48,9 @@ public:
 */
 class ConcretePrototypeMouse : public PrototypeAnimal {
 public:
-	std::shared_ptr<PrototypeAnimal > clone() override 
+	std::unique_ptr<PrototypeAnimal > clone() override 
 	{
-		return std::make_shared<ConcretePrototypeMouse>(*this);
+		return std::make_unique<ConcretePrototypeMouse>(*this);
 	}
 	std::string getType() const override 
 	{

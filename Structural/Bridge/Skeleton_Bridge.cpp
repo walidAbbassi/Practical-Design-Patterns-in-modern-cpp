@@ -17,7 +17,7 @@
 */
 class Implementor {
 public:
-	virtual void operationImpl(double side) = 0;
+	virtual void operationImpl(const double& side) = 0;
 	virtual ~Implementor(){}
 	// ...
 };
@@ -28,7 +28,7 @@ public:
 */
 class ConcreteImplementors_A : public Implementor {
 public:
-	void operationImpl(double side) override
+	void operationImpl(const double& side) override
 	{
 		std::cout << "Concrete Implementor A " << std::endl;
 	}
@@ -42,7 +42,7 @@ public:
 */
 class ConcreteImplementors_B : public Implementor {
 public:
-	void operationImpl(double side) override
+	void operationImpl(const double& side) override
 	{
 		std::cout << "Concrete Implementor B " << std::endl;
 	}
@@ -57,11 +57,11 @@ public:
 class Abstraction {
 public:
 	virtual void operation() = 0; // low-level
-	virtual void action(double size) = 0; // high-level
+	virtual void action(const double& size) = 0; // high-level
 	virtual ~Abstraction() {}
 protected:
 	std::weak_ptr<Implementor> implementor_ptr;
-	Abstraction(std::weak_ptr<Implementor> implementor) : implementor_ptr(implementor) {}
+	Abstraction(const std::weak_ptr<Implementor> &implementor) : implementor_ptr(implementor) {}
 	// ...
 };
 
@@ -71,7 +71,7 @@ protected:
 */
 class RefinedAbstraction : public Abstraction {
 public:
-	RefinedAbstraction(double side, std::shared_ptr<Implementor> implementor)
+	RefinedAbstraction(const double& side, const std::shared_ptr<Implementor> &implementor)
 		: side(side), Abstraction(implementor) {}
 
 	//	 low-level i.e. Implementation specific
@@ -81,7 +81,7 @@ public:
 	}
 
 	//	 high-level i.e. Abstraction specific
-	void action(double size) override
+	void action(const double& size) override
 	{
 		std::cout << "action  " << std::endl;
 		side *= size;

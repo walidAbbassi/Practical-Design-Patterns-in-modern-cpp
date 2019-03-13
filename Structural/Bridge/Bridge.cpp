@@ -17,7 +17,7 @@
 */
 class Drawing {
 public:
-	virtual void drawSquare(double side) = 0;
+	virtual void drawSquare(const double& side) = 0;
 	// ...
 };
 
@@ -27,7 +27,7 @@ public:
 */
 class DrawingSquareWithPencil : public Drawing {
 public:
-	void drawSquare(double side) override 
+	void drawSquare(const double& side) override
 	{
 		// use your function or use framework to draw : 
 		// openFrameworks(https://github.com/openframeworks/openFrameworks) /opencv/Qt/openGL ...
@@ -42,7 +42,7 @@ public:
 */
 class DrawingSquareWithBrush : public Drawing {
 public:
-	void drawSquare(double side) override 
+	void drawSquare(const double& side) override
 	{
 		// use your function or use framework to draw : 
 		// openFrameworks(https://github.com/openframeworks/openFrameworks) /opencv/Qt/openGL ...
@@ -58,12 +58,12 @@ public:
 class Shape {
 public:
 	virtual void draw() = 0; // low-level
-	virtual void resize(double size) = 0; // high-level
+	virtual void resize(const double& size) = 0; // high-level
 	virtual ~Shape() {
 	}
 protected:
 	std::weak_ptr<Drawing> drawing;
-	Shape(std::weak_ptr<Drawing> drawing) : drawing(drawing) {}
+	Shape(const std::weak_ptr<Drawing> &drawing) : drawing(drawing) {}
 	// ...
 };
 
@@ -73,7 +73,7 @@ protected:
 */
 class Square : public Shape {
 public:
-	Square(double side, std::shared_ptr<Drawing> drawingImplementor)
+	Square(double side, const std::shared_ptr<Drawing> &drawingImplementor)
 		: side(side), Shape(drawingImplementor) {}
 
 //	 low-level i.e. Implementation specific
@@ -83,7 +83,7 @@ public:
 	}
 
 //	 high-level i.e. Abstraction specific
-	void resize(double size) override 
+	void resize(const double& size) override
 	{
 		std::cout << "Resize Square with = " << size << std::endl;
 		side *= size;

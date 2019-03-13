@@ -25,8 +25,8 @@ public:
 
 	virtual void addSong(const std::weak_ptr<SongComponent> &songComponent) { /* ... */ }
 
-	virtual void displaySongInfo() = 0;
-	virtual std::string getName() = 0;
+	virtual void displaySongInfo() const = 0;
+	virtual std::string getName() const = 0;
 	virtual ~SongComponent(){}
 };
 
@@ -38,7 +38,7 @@ public:
 class SongGroup : public SongComponent {
 public:
 
-	SongGroup(std::string songGroupName) :songGroupName(songGroupName){}
+	SongGroup(const std::string &songGroupName) :songGroupName(songGroupName){}
 
 	void addSong(const std::weak_ptr<SongComponent> &songComponent)
 	{
@@ -48,7 +48,7 @@ public:
 		}
 	}
 
-	void displaySongInfo()
+	void displaySongInfo() const override
 	{
 		std::cout << " (";
 
@@ -66,7 +66,7 @@ public:
 		std::cout << ") ";
 	}
 
-	std::string getName() { return songGroupName; }
+	std::string getName() const override { return songGroupName; }
 
 	~SongGroup() {}
 
@@ -82,14 +82,14 @@ private:
 */
 class Song : public SongComponent {
 public:
-	Song(std::string songName) : songName(songName) {}
+	Song(const std::string &songName) : songName(songName) {}
 
-	void displaySongInfo()
+	void displaySongInfo() const override
 	{
 		std::cout << "[" << songName << "]";
 	}
 
-	std::string getName() { return songName; }
+	std::string getName() const override { return songName; }
 
 	~Song() {}
 

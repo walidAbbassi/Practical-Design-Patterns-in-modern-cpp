@@ -25,7 +25,7 @@ public:
 
 	virtual void add(const std::weak_ptr<Component> &component) { /* ... */ }
 
-	virtual void display() = 0;
+	virtual void display() const = 0;
 	virtual ~Component() {}
 };
 
@@ -47,7 +47,7 @@ public:
 		}		
 	}
 
-	void display()
+	void display() const override
 	{
 		std::cout << " (";
 		//for_each(children.begin(), children.end(), std::mem_fun(&Component::display));  ==> old if you use raw pointer in your project
@@ -69,14 +69,14 @@ private:
 */
 class Leaf : public Component {
 public:
-	Leaf(std::string name) : name(name) {}
+	Leaf(const std::string& name) : name(name) {}
 
-	void display()
+	void display() const override
 	{
 		std::cout << "[" << name << "]";
 	}
 
-	std::string getName() { return name; }
+	std::string getName() const { return name; }
 
 	~Leaf() {}
 

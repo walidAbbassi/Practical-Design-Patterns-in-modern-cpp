@@ -10,7 +10,7 @@ These principles, when combined together, make it easy for a programmer to devel
 - Dependency inversion principle
 
 
-## C++ Design Patterns (do not abuse them: let the simple thing simpler)
+## C++ Design Patterns (do not abuse them: let the thing simple as possible)
 
 Software design patterns are general reusable solutions to problems which occur
 over and over again in object-oriented design enviroment. It is not a finished 

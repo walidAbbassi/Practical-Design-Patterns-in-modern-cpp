@@ -61,6 +61,7 @@ Design patterns in this repository are based on
 * [Design Patterns by The "Gang of Four"]
 * [Head First: Design Patterns]
 * [Wikipedia]
+* [Design Principles]
 
 [Design Patterns in C++]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Design Patterns in Python]: https://github.com/JakubVojvoda/design-patterns-python
@@ -70,6 +71,7 @@ Design patterns in this repository are based on
 [Design Patterns by The "Gang of Four"]: https://en.wikipedia.org/wiki/Design_Patterns
 [Head First: Design Patterns]: http://www.headfirstlabs.com/books/hfdp/ 
 [Wikipedia]: https://en.wikipedia.org/wiki/Software_design_pattern
+[Design Principles]: https://www.oodesign.com/design-principles.html
 
 [Abstract Factory]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Abstract%20Factory
 [Builder]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Creational/Builder

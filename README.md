@@ -30,7 +30,7 @@ objects).
 - [Adapter], interface to an object
 - [Bridge], implementation of an object 
 - [Composite], structure and composition of an object
-- [Decorator later], responsibilities of an object without subclassing
+- [Decorator], responsibilities of an object without subclassing
 - [Façade later], interface to a subsystem
 - [Flyweight later], storage costs of objects
 - [Proxy later], how an object is accessed (its location)
@@ -81,7 +81,7 @@ Design patterns in this repository are based on
 [Adapter]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Adapter
 [Bridge]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Bridge
 [Composite]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Composite
-[Decorator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Decorator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Decorator
 [Façade]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Flyweight]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Proxy]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp

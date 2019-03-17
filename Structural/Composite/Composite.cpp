@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 #include <algorithm> 
 #include <functional> 
@@ -38,9 +39,9 @@ public:
 class SongGroup : public SongComponent {
 public:
 
-	SongGroup(const std::string &songGroupName) :songGroupName(songGroupName){}
+	explicit SongGroup(const std::string &songGroupName) :songGroupName(songGroupName){}
 
-	void addSong(const std::weak_ptr<SongComponent> &songComponent)
+	void addSong(const std::weak_ptr<SongComponent> &songComponent) override
 	{
 		if (!songComponent.expired())
 		{
@@ -68,7 +69,7 @@ public:
 
 	std::string getName() const override { return songGroupName; }
 
-	~SongGroup() {}
+	~SongGroup(){}
 
 private:
 	std::vector<std::weak_ptr<SongComponent>> children;
@@ -82,7 +83,7 @@ private:
 */
 class Song : public SongComponent {
 public:
-	Song(const std::string &songName) : songName(songName) {}
+	explicit Song(const std::string &songName) : songName(songName) {}
 
 	void displaySongInfo() const override
 	{
@@ -91,7 +92,7 @@ public:
 
 	std::string getName() const override { return songName; }
 
-	~Song() {}
+	~Song(){}
 
 private:
 	std::string songName;

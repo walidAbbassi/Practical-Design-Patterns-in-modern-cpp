@@ -5,7 +5,7 @@ Composite lets clients treat individual objects and compositions of objects unif
 The pattern has structural purpose and applies to objects.
 
 
-### UML class diagram example for the Bridge Design Pattern.
+### UML class diagram example for the Composite Design Pattern.
 
  - Component - Component is the abstraction for leafs and composites. It defines the interface that must be implemented by the objects in the composition. For example a file system resource defines move, copy, rename, and getSize methods for files and folders.
  - Leaf - Leafs are objects that have no children. They implement services described by the Component interface. For example a file object implements move, copy, rename, as well as getSize methods which are related to the Component interface.

@@ -149,7 +149,7 @@ public:
 
 int main()
 {
-std::unique_ptr<Drink> icedCoffee = std::make_unique<Coffee>(std::make_unique<IceCube>
+	std::unique_ptr<Drink> icedCoffee = std::make_unique<Coffee>(std::make_unique<IceCube>
 								(std::make_unique<Sugar>
 								(std::make_unique<Water>())));
 	std::cout << "recipe of Iced Coffee " << icedCoffee << std::endl;

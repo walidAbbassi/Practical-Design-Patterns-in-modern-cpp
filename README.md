@@ -31,7 +31,7 @@ objects).
 - [Bridge], implementation of an object 
 - [Composite], structure and composition of an object
 - [Decorator], responsibilities of an object without subclassing
-- [Façade later], interface to a subsystem
+- [Façade], interface to a subsystem
 - [Flyweight later], storage costs of objects
 - [Proxy later], how an object is accessed (its location)
 #### Behavioral Patterns
@@ -82,7 +82,7 @@ Design patterns in this repository are based on
 [Bridge]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Bridge
 [Composite]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Composite
 [Decorator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Decorator
-[Façade]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Façade]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Façade
 [Flyweight]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Proxy]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Chain of Responsibility]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp

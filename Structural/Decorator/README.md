@@ -5,7 +5,7 @@ provide a flexible alternative to subclassing for extending functionality.
 The pattern has structural purpose and applies to objects.
 
 
-### UML class diagram example for the Bridge Design Pattern.
+### UML class diagram example for the Decorator Design Pattern.
 
  - Component - Interface for objects that can have responsibilities added to them dynamically.
  - ConcreteComponent - Defines an object to which additional responsibilities can be added.

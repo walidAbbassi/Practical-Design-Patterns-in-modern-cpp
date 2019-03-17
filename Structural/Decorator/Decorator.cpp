@@ -149,14 +149,14 @@ public:
 
 int main()
 {
-	std::unique_ptr<Drink> icedCoffee = std::make_unique<Coffee>(std::make_unique<IceCube>
-																(std::make_unique<Sugar>
-																(std::make_unique<Water>())));
+std::unique_ptr<Drink> icedCoffee = std::make_unique<Coffee>(std::make_unique<IceCube>
+								(std::make_unique<Sugar>
+								(std::make_unique<Water>())));
 	std::cout << "recipe of Iced Coffee " << icedCoffee << std::endl;
 	std::cout << "price : " << icedCoffee->getPrice() <<" $"<< std::endl;
 
 	std::unique_ptr<Drink> cafeLatte = std::make_unique<Coffee>(std::make_unique<Sugar>
-															   (std::make_unique<Milk>()));
+								   (std::make_unique<Milk>()));
 	std::cout << "recipe of Cafe Latte " << cafeLatte << std::endl;
 	std::cout << "price : " << cafeLatte->getPrice() << " $" << std::endl;
 

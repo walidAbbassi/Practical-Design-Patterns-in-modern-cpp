@@ -128,13 +128,14 @@ public:
 int main()
 {
 	std::unique_ptr<Component> component_1 = std::make_unique<ConcreteDecorators_A>
-											(std::make_unique<ConcreteDecorators_C>
-											(std::make_unique<ConcreteDecorators_B>
-											(std::make_unique<ConcreteComponent_A>())));
+								(std::make_unique<ConcreteDecorators_C>
+								(std::make_unique<ConcreteDecorators_B>
+								(std::make_unique<ConcreteComponent_A>())));
 	std::cout << "recipe of component_1 " << component_1 << std::endl;
 
-	std::unique_ptr<Component> component_2 = std::make_unique<ConcreteDecorators_A>(std::make_unique<ConcreteDecorators_B>
-		(std::make_unique<ConcreteComponent_B>()));
+	std::unique_ptr<Component> component_2 = std::make_unique<ConcreteDecorators_A>
+								(std::make_unique<ConcreteDecorators_B>
+								(std::make_unique<ConcreteComponent_B>()));
 	std::cout << "recipe of component_2 " << component_2 << std::endl;
 
 	system("pause");

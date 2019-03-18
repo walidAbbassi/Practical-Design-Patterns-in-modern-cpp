@@ -211,6 +211,14 @@ int main()
 		character->display(pointSize);
 	}
 	SetConsoleTextAttribute(hConsole, colorDEFAULT);
+	// if we run example for document containe random 1000 ObjectCharWithColor and print out(oups need to remove std::endl for flush sorry) 
+	// with random color(Blue/Green/Red):
+	// code without Flyweight design : 1569546 microseconds ==> 1,569546 seconds
+	// code with Flyweight design 	 : 1448003 microseconds ==> 1,448003 seconds
+	
+	// document containe random 100000 ObjectCharWithColor and print out with random color(Blue/Green/Red):
+	// code without Flyweight design : 88187505 microseconds ==> 88,187505 seconds
+	// code with Flyweight design 	 : 63950289 microseconds ==> 63,950289 seconds
 	system("pause");
 	return 0;
 }

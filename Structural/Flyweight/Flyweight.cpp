@@ -17,14 +17,16 @@
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-enum Color{
+enum Color
+{
 	colorBLUE = FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY | BACKGROUND_BLUE,
 	colorGREEN = FOREGROUND_GREEN | FOREGROUND_INTENSITY | BACKGROUND_BLUE | BACKGROUND_GREEN,
 	colorRED = FOREGROUND_RED | FOREGROUND_INTENSITY | BACKGROUND_BLUE | BACKGROUND_RED,
 	colorDEFAULT = FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE
 };
 
-int generateRandomNumber(int min, int max) {
+int generateRandomNumber(int min, int max) 
+{
 	std::random_device random;
 	std::mt19937 generate(random());
 	std::uniform_int_distribution<> distribution(min, max);	// distribution in range [min, max]

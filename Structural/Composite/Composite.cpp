@@ -110,14 +110,14 @@ int main()
 	std::shared_ptr<Song> song_4 = std::make_shared<Song>("Song4");
 	std::shared_ptr<Song> song_5 = std::make_shared<Song>("Song5");
 
-	songGroupForSeason->addSong(song_1);					// ==> Season ( [Song1] )
+	songGroupForSeason->addSong(song_1);				// ==> Season ( [Song1] )
 	songGroupForSeason->addSong(songGroupForSpring);		// ==> Season ( [Song1] , Spring )
 
 	songGroupForSpring->addSong(song_2);
-	songGroupForSpring->addSong(song_3);					// ==> Spring ( [Song2][Song3] ) ==> Season( [Song1] , ([Song2][Song3]) )
+	songGroupForSpring->addSong(song_3);				// ==> Spring ( [Song2][Song3] ) ==> Season( [Song1] , ([Song2][Song3]) )
 
 	songGroupForWinter->addSong(song_4);
-	songGroupForWinter->addSong(song_5);					// ==> Winter ( [Song4][Song5] )
+	songGroupForWinter->addSong(song_5);				// ==> Winter ( [Song4][Song5] )
 
 	songGroupForSpring->addSong(songGroupForWinter);		// ==> Spring( [Song2][Song3] , Winter ) ==> Season( [Song1] , ([Song2][Song3] , ([Song4][Song5]) ) )
 

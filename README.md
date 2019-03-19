@@ -33,7 +33,7 @@ objects).
 - [Decorator], responsibilities of an object without subclassing
 - [Facade], interface to a subsystem
 - [Flyweight], storage costs of objects
-- [Proxy later], how an object is accessed (its location)
+- [Proxy], how an object is accessed (its location)
 #### Behavioral Patterns
 - [Chain of Responsibility later], object that can fulfill a request
 - [Command later], when and how a request is fulfilled
@@ -84,7 +84,7 @@ Design patterns in this repository are based on
 [Decorator]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Decorator
 [Facade]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Facade
 [Flyweight]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Flyweight
-[Proxy]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
+[Proxy]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp/tree/master/Structural/Proxy
 [Chain of Responsibility]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Command]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp
 [Interpreter]: https://github.com/walidAbbassi/Practical-Design-Patterns-in-modern-cpp

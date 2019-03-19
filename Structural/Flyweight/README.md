@@ -8,10 +8,12 @@ memory usage when you need to create a large number of similar objects.
 ### UML class diagram example for the Flyweight Design Pattern.
 
  - Flyweight - Declares an interface through which flyweights can receive and act on extrinsic state.
- - ConcreteFlyweight - Implements the Flyweight interface and stores intrinsic state. 
-		A ConcreteFlyweight object must be sharable. The Concrete flyweight object must maintain state that it is intrinsic to it, 
-		and must be able to manipulate state that is extrinsic. In the war game example graphical representation is an intrinsic state,
-		where location and health states are extrinsic. Soldier moves, the motion behavior manipulates the external state (location) to create a new location.
+ - ConcreteFlyweight 
+  - Implements the Flyweight interface and stores intrinsic state. 
+  - A ConcreteFlyweight object must be sharable. 
+  - The Concrete flyweight object must maintain state that it is intrinsic to it, and must be able to manipulate state that is extrinsic. 
+  - In the war game example graphical representation is an intrinsic state, where location and health states are extrinsic. 
+  - Soldier moves, the motion behavior manipulates the external state (location) to create a new location.
  - FlyweightFactory - The factory creates and manages flyweight objects. In addition the factory ensures sharing of the flyweight objects.
 		The factory maintains a pool of different flyweight objects and returns an object from the pool if it is already created, 
 		adds one to the pool and returns it in case it is new.

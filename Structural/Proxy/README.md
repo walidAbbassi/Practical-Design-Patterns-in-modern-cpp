@@ -9,8 +9,8 @@ The pattern has structural purpose and applies to objects.
  - Subject - Interface implemented by the RealSubject and representing its services. 
 					The interface must be implemented by the proxy as well so that the proxy can be used in any location where the RealSubject can be used.
  - Proxy	- Maintains a reference that allows the Proxy to access the RealSubject.
-			- Implements the same interface implemented by the RealSubject so that the Proxy can be substituted for the RealSubject.
-			- Controls access to the RealSubject and may be responsible for its creation and deletion.
+ 		- Implements the same interface implemented by the RealSubject so that the Proxy can be substituted for the RealSubject.
+		- Controls access to the RealSubject and may be responsible for its creation and deletion.
  - RealSubject - the real object that the proxy represents.
 
  
